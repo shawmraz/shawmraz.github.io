@@ -83,13 +83,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="lottie-web端使用上手"><a href="#lottie-web端使用上手" class="headerlink" title="lottie web端使用上手"></a>lottie web端使用上手</h2><p>1.安装(littie-web或者bodymovin，这两个是一样的)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add lottie-web || yarn add bodymovin</span><br></pre></td></tr></table></figure></p>
+<p>2.使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import * as bodymovin from &apos;bodymovin&apos;</span><br><span class="line">// lottie动画json文件 可以在https://www.lottiefiles.com下载</span><br><span class="line">const animationData = require(&apos;./star.json&apos;)</span><br><span class="line">let animidom = document.getElementById(&apos;lottie&apos;)</span><br><span class="line">let anim = bodymovin.loadAnimation(&#123;</span><br><span class="line">  container: animidom,</span><br><span class="line">  renderer: &apos;svg&apos;,</span><br><span class="line">  loop: false,</span><br><span class="line">  autoplay: true,</span><br><span class="line">  animationData: animationData,</span><br><span class="line">  rendererSettings: null</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>这样操作后 就可以看到动画动起来了<br>此时anim对象有很多参数和方法，<br><br>具体的可以查看文档<a href="https://github.com/airbnb/lottie-web" target="_blank" rel="noopener">https://github.com/airbnb/lottie-web</a><br>可以控制动画是否播放，暂停，速度，方向等，以及监听各个事件，<br><br>比如监听动画是否完成:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">anim.addEventListener(&apos;complete&apos;,() =&gt; &#123;</span><br><span class="line">  console.log(&apos;complete~&apos;)</span><br><span class="line">&#125;,false)</span><br></pre></td></tr></table></figure></p>
+<p>虽然lottie似乎主要在安卓端ios端中使用，web的动画库也有其他可选的<br><br>不过兼容性还可以，原声端动画设计也是给的lottie，所以在web端使用也是方便了<br></p>
+
       
     </div>
     <footer class="article-footer">
       <a data-url="https://shawmraz.github.io/2018/02/11/lottie-web/" data-id="cjdidkqm30001j4vbz0qu1vdf" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Lottie/">Lottie</a></li></ul>
+
     </footer>
   </div>
   
@@ -158,7 +164,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Parcel-前端/">Parcel,前端</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Lottie/">Lottie</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Parcel-前端/">Parcel,前端</a></li></ul>
     </div>
   </div>
 
@@ -168,7 +174,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Parcel-前端/" style="font-size: 10px;">Parcel,前端</a>
+      <a href="/tags/Lottie/" style="font-size: 10px;">Lottie</a> <a href="/tags/Parcel-前端/" style="font-size: 10px;">Parcel,前端</a>
     </div>
   </div>
 
