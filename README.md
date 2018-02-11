@@ -1,2 +1,2 @@
 # shawmraz.github.io
-my blog
+[my blog](https://shawmraz.github.io/)
