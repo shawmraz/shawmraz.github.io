@@ -5,14 +5,18 @@
   
 
   
-  <title>Shaw</title>
+  <title>chromePlug | Shaw</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Shaw">
-<meta property="og:url" content="https://shawmraz.github.io/index.html">
+  <meta name="description" content="#chrome浏览器中运行自己的js脚本 简单实例 - 自动跳转 http://geek.csdn.net/ 内外链文章1.新建 manifest.json123456789101112131415&amp;#123;  &amp;quot;name&amp;quot;: &amp;quot;csdn&amp;quot;,  &amp;quot;manifest_version&amp;quot;: 2,  &amp;quot;version&amp;quot;: &amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="chromePlug">
+<meta property="og:url" content="https://shawmraz.github.io/2018/02/27/chromePlug/index.html">
 <meta property="og:site_name" content="Shaw">
+<meta property="og:description" content="#chrome浏览器中运行自己的js脚本 简单实例 - 自动跳转 http://geek.csdn.net/ 内外链文章1.新建 manifest.json123456789101112131415&amp;#123;  &amp;quot;name&amp;quot;: &amp;quot;csdn&amp;quot;,  &amp;quot;manifest_version&amp;quot;: 2,  &amp;quot;version&amp;quot;: &amp;">
+<meta property="og:updated_time" content="2018-02-27T09:06:08.889Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Shaw">
+<meta name="twitter:title" content="chromePlug">
+<meta name="twitter:description" content="#chrome浏览器中运行自己的js脚本 简单实例 - 自动跳转 http://geek.csdn.net/ 内外链文章1.新建 manifest.json123456789101112131415&amp;#123;  &amp;quot;name&amp;quot;: &amp;quot;csdn&amp;quot;,  &amp;quot;manifest_version&amp;quot;: 2,  &amp;quot;version&amp;quot;: &amp;">
   
     <link rel="alternate" href="/atom.xml" title="Shaw" type="application/atom+xml">
   
@@ -59,9 +63,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-chromePlug" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-chromePlug" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/02/27/chromePlug/" class="article-date">
   <time datetime="2018-02-27T08:52:47.000Z" itemprop="datePublished">2018-02-27</time>
@@ -74,8 +76,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/27/chromePlug/">chromePlug</a>
+    <h1 class="article-title" itemprop="name">
+      chromePlug
     </h1>
   
 
@@ -98,101 +100,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-lottie-web" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/02/11/lottie-web/" class="article-date">
-  <time datetime="2018-02-11T05:54:32.000Z" itemprop="datePublished">2018-02-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/11/lottie-web/">lottie-web</a>
-    </h1>
+    <a href="/2018/02/11/lottie-web/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Viejo</strong>
+      <div class="article-nav-title">lottie-web</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="lottie-web端使用上手"><a href="#lottie-web端使用上手" class="headerlink" title="lottie web端使用上手"></a>lottie web端使用上手</h2><p>1.安装(littie-web或者bodymovin，这两个是一样的)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add lottie-web || yarn add bodymovin</span><br></pre></td></tr></table></figure></p>
-<p>2.使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import * as bodymovin from &apos;bodymovin&apos;</span><br><span class="line">// lottie动画json文件 可以在https://www.lottiefiles.com下载</span><br><span class="line">const animationData = require(&apos;./star.json&apos;)</span><br><span class="line">let animidom = document.getElementById(&apos;lottie&apos;)</span><br><span class="line">let anim = bodymovin.loadAnimation(&#123;</span><br><span class="line">  container: animidom,</span><br><span class="line">  renderer: &apos;svg&apos;,</span><br><span class="line">  loop: false,</span><br><span class="line">  autoplay: true,</span><br><span class="line">  animationData: animationData,</span><br><span class="line">  rendererSettings: null</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
-<p>这样操作后 就可以看到动画动起来了<br>此时anim对象有很多参数和方法，<br><br>具体的可以查看文档<a href="https://github.com/airbnb/lottie-web" target="_blank" rel="noopener">https://github.com/airbnb/lottie-web</a><br>可以控制动画是否播放，暂停，速度，方向等，以及监听各个事件，<br><br>比如监听动画是否完成:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">anim.addEventListener(&apos;complete&apos;,() =&gt; &#123;</span><br><span class="line">  console.log(&apos;complete~&apos;)</span><br><span class="line">&#125;,false)</span><br></pre></td></tr></table></figure></p>
-<p>虽然lottie似乎主要在安卓端ios端中使用，web的动画库也有其他可选的<br><br>不过兼容性还可以，原声端动画设计也是给的lottie，所以在web端使用也是方便了<br></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://shawmraz.github.io/2018/02/11/lottie-web/" data-id="cje5fk0j50001gkvbi5kud8a0" class="article-share-link">Compartir</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Lottie/">Lottie</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-parcel" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/02/09/parcel/" class="article-date">
-  <time datetime="2018-02-09T06:05:45.000Z" itemprop="datePublished">2018-02-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/09/parcel/">parcel</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Parcel打包初体验"><a href="#Parcel打包初体验" class="headerlink" title="Parcel打包初体验"></a>Parcel打包初体验</h1><p>webpack理应也该有替代者或竞争者，先不讨论优缺，试试看先</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.安装：yarn global add parcel-bundler or npm install -g parcel-bundler</span><br><span class="line">2.新建 package.json：yarn init or npm init</span><br><span class="line">3.新建 index.html</span><br><span class="line">4.parcel index.html 运行</span><br></pre></td></tr></table></figure>
-<p>安装好即配置好,parcel会自动帮我们做好配置各种loader<br><br>比如我用了typescript开发,在index.html引入了index.ts <br></p>
-<h5 id="index-html"><a href="#index-html" class="headerlink" title="index.html"></a>index.html</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;script src=&quot;./index.ts&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<h5 id="index-ts"><a href="#index-ts" class="headerlink" title="index.ts"></a>index.ts</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(&apos;typescript&apos;)</span><br></pre></td></tr></table></figure>
-<p>parcel index.html，依旧可以用<br></p>
-<p>在index.ts里面引入了index.less<br></p>
-<h5 id="index-ts-1"><a href="#index-ts-1" class="headerlink" title="index.ts"></a>index.ts</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import &apos;./index.less&apos;</span><br><span class="line">console.log(&apos;typescript&apos;)</span><br></pre></td></tr></table></figure>
-<p>parcel index.html，也是无需任何配置<br></p>
-<p>傻瓜操作,一时有点不知所措，感到惊喜<br></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://shawmraz.github.io/2018/02/09/parcel/" data-id="cje5fk0j60002gkvbay78lvdh" class="article-share-link">Compartir</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Parcel-前端/">Parcel,前端</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
